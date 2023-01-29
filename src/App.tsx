@@ -18,6 +18,7 @@ function App() {
   const [productDescription, setProductDescription] = useState("Product Description");
   const [productPrice, setProductPrice] = useState("5");
   const [productInstock, setProductInstock] = useState("Yes");
+  const [productNumberOfUnits, setProductNumberOfUnits] = useState(4);
 
   return (
     <main>
@@ -29,6 +30,11 @@ function App() {
         <div className='productVisual__price-and-Stock--container'>
           <p className='productVisual__price--style'><span className='productVisualDollarSign'>$</span>{productPrice}</p>
           <p>{productInstock==="Yes"?"In Stock":"Not in Stock"}</p>
+        </div>
+
+        {/*Product Details Visual area */}
+        <div id="product-visual-details-area">
+          <p>Number of Units: <span>#{productNumberOfUnits}</span></p>
         </div>
       </section>
       
@@ -66,6 +72,10 @@ function App() {
         <section id="product-details">
           <p className='productUI__heading--style'>Product Details </p>
           <div className='productDetails__content--layout'>
+            <div className='productDetails__input--container'>
+                <label htmlFor="product-numberOfUnits-input"># of Units:</label>
+                <input className='contentInputs--style' id="product-numberOfUnits-input" type="number" min="1" max="20" step="1" onChange={(e)=> setProductNumberOfUnits(Math.ceil(Number(e.target.value)))}></input>
+            </div>
           </div>
         </section>
       </section>
