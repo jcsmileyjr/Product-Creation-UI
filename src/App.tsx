@@ -1,24 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
+/**
+ * First TYPESCRIPT project - Product Creation
+ * 
+ * TODO 1: A user can see the words "Hello World"
+ * TODO 2: A user can write a new product title through an input field
+ * TODO 3: A user can write a brief product description
+ * TODO 4: The user can enter a dollar amount
+ * TODO 5: A user can check Yes/No if the product is in stock
+ * TODO 6: A user can verify their product details (number of units, color, made in USA based), shoud be an object
+ * 
+ */
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <p>Hello World</p>
     </div>
   );
 }
