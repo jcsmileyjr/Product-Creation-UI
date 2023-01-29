@@ -25,16 +25,17 @@ function App() {
       {/*Product input section that is displayed in the Product Visual Section */}
       <section id="product-ui">
         <section id="product-information">
-          <p>General Product Information </p>
+          <p className='productUI__heading--style'>General Product Information </p>
           <div className='productInformation__content--layout'>
+            <label htmlFor="product-title-input">Title</label>
+            <input id="product-title-input" type="text"></input>
 
           </div>
         </section>
 
         <section id="product-details">
-          <p>Product Details </p>
+          <p className='productUI__heading--style'>Product Details </p>
           <div className='productDetails__content--layout'>
-
           </div>
         </section>
       </section>

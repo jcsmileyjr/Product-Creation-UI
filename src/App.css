@@ -14,15 +14,23 @@ main {
   text-align: center;
 }
 
+.productUI__heading--style {
+  margin-bottom: 5px;
+}
+
 #product-ui {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  padding: 20px; 
+}
+
+#product-information, #product-details {
+  padding: 0 20px;
 }
 
 #product-information {
-  flex: 3;
+  /* flex: 3; */
+  flex: 1;
 }
 
 #product-details {
@@ -31,5 +39,14 @@ main {
 
 .productInformation__content--layout, .productDetails__content--layout {
   border: 1px solid black;
+  padding: 20px 10px;
 }
 
+label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+input {
+  width: 80%;
+}
