@@ -12,10 +12,20 @@ main {
 
 #product-visual {
   padding:0 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .productVisual__title--style{
   text-align: center;
+}
+
+.productVisual__productImage--style {
+  width: 70%;
+  flex: 1;
+  max-height: 25%;
+  align-self: center;
 }
 
 .productVisual__description--style {

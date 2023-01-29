@@ -1,4 +1,5 @@
 import {useState} from 'react';
+import DefaultImage from './assets/african-pillow-design.jpg'
 import './App.css';
 
 /**
@@ -21,6 +22,9 @@ function App() {
       {/*Non input section to display the product based on input from Product UI section */}
       <section id="product-visual" className=''>
         <h1 className='productVisual__title--style'>{productTitle}</h1>
+        <img className='productVisual__productImage--style' src={DefaultImage} alt="african woman with glasses surround by butterflis on a pillow" />
+        <p className='productVisual__description--style'>{productDescription}</p>
+        <p className='productVisual__description--style'>{productDescription}</p>
         <p className='productVisual__description--style'>{productDescription}</p>
       </section>
       
