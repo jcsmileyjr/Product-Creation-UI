@@ -28,7 +28,7 @@ function App() {
           <p className='productUI__heading--style'>General Product Information </p>
           <div className='productInformation__content--layout'>
             <label htmlFor="product-title-input">Title</label>
-            <input id="product-title-input" type="text"></input>
+            <input id="product-title-input" type="text" onChange={(e)=> setProductTitle(e.target.value)}></input>
 
           </div>
         </section>
