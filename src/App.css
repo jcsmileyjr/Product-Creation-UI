@@ -32,6 +32,16 @@ main {
   font-style: italic;
 }
 
+.productVisual__price--style {
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.productVisualDollarSign {
+  vertical-align: super;
+  font-size: small;
+}
+
 .productUI__heading--style {
   margin-bottom: 5px;
   font-weight: bold;

@@ -16,6 +16,7 @@ import './App.css';
 function App() {
   const [productTitle, setProductTitle] = useState("Product Title");
   const [productDescription, setProductDescription] = useState("Product Description");
+  const [productPrice, setProductPrice] = useState("5");
 
   return (
     <main>
@@ -24,6 +25,10 @@ function App() {
         <h1 className='productVisual__title--style'>{productTitle}</h1>
         <img className='productVisual__productImage--style' src={DefaultImage} alt="african woman with glasses surround by butterflis on a pillow" />
         <p className='productVisual__description--style'>{productDescription}</p>
+        <div className='productVisual__price&Stock--container'>
+          <p className='productVisual__price--style'><span className='productVisualDollarSign'>$</span>{productPrice}</p>
+          <p>Testing</p>
+        </div>
       </section>
       
       {/*Product input section that is displayed in the Product Visual Section */}
@@ -38,6 +43,10 @@ function App() {
             <div className='productInformation__input--container'>
               <label className='productDescriptionInput__label--style' htmlFor='product-description-input'>Description:</label>
               <textarea rows={5} onChange={(e) => setProductDescription(e.target.value)} id="product-description-input"></textarea>
+            </div>
+            <div className='productInformation__input--container'>
+              <label className='productPriceInput__label--style' htmlFor='product-price-input'>Price:</label>
+              <input id="product-price-input" type="number" onChange={(e)=> setProductPrice(e.target.value)}></input>
             </div>
           </div>
         </section>
