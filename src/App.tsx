@@ -37,7 +37,7 @@ function App() {
             </div>
             <div className='productInformation__input--container'>
               <label className='productDescriptionInput__label--style' htmlFor='product-description-input'>Description:</label>
-              <textarea onChange={(e) => setProductDescription(e.target.value)} id="product-description-input"></textarea>
+              <textarea rows={5} onChange={(e) => setProductDescription(e.target.value)} id="product-description-input"></textarea>
             </div>
           </div>
         </section>
