@@ -19,6 +19,7 @@ function App() {
   const [productPrice, setProductPrice] = useState("5");
   const [productInstock, setProductInstock] = useState("Yes");
   const [productNumberOfUnits, setProductNumberOfUnits] = useState(4);
+  const [productColorDescription, setProductColorDescription] = useState("Beige background with rainbow flowers accent with a light blue and bright red hair bows")
 
   return (
     <main>
@@ -35,6 +36,7 @@ function App() {
         {/*Product Details Visual area */}
         <div id="product-visual-details-area">
           <p>Number of Units: <span>#{productNumberOfUnits}</span></p>
+          <p>Color: <span>{productColorDescription}</span></p>
         </div>
       </section>
       
@@ -73,8 +75,12 @@ function App() {
           <p className='productUI__heading--style'>Product Details </p>
           <div className='productDetails__content--layout'>
             <div className='productDetails__input--container'>
-                <label htmlFor="product-numberOfUnits-input"># of Units:</label>
-                <input className='contentInputs--style' id="product-numberOfUnits-input" type="number" min="1" max="20" step="1" onChange={(e)=> setProductNumberOfUnits(Math.ceil(Number(e.target.value)))}></input>
+                <label htmlFor="product-number-of-units-input"># of Units:</label>
+                <input className='contentInputs--style' id="product-number-of-units-input" type="number" min="1" max="20" step="1" onChange={(e)=> setProductNumberOfUnits(Math.ceil(Number(e.target.value)))}></input>
+            </div>
+            <div className='productDetails__input--container'>
+                <label htmlFor="product-color-description-input">Color</label>
+                <input className='contentInputs--style' id="product-color-description-input" type="text" onChange={(e)=> setProductColorDescription(e.target.value)}></input>
             </div>
           </div>
         </section>
