@@ -14,12 +14,14 @@ import './App.css';
  */
 function App() {
   const [productTitle, setProductTitle] = useState("Product Title");
+  const [productDescription, setProductDescription] = useState("Product Description");
 
   return (
     <main>
       {/*Non input section to display the product based on input from Product UI section */}
       <section id="product-visual" className=''>
         <h1 className='productVisual__title--style'>{productTitle}</h1>
+        <p className='productVisual__description--style'>{productDescription}</p>
       </section>
       
       {/*Product input section that is displayed in the Product Visual Section */}
@@ -27,9 +29,14 @@ function App() {
         <section id="product-information">
           <p className='productUI__heading--style'>General Product Information </p>
           <div className='productInformation__content--layout'>
-            <label htmlFor="product-title-input">Title</label>
-            <input id="product-title-input" type="text" onChange={(e)=> setProductTitle(e.target.value)}></input>
-
+            <div className='productInformation__input--container'>
+              <label htmlFor="product-title-input">Title:</label>
+              <input id="product-title-input" type="text" onChange={(e)=> setProductTitle(e.target.value)}></input>
+            </div>
+            <div className='productInformation__input--container'>
+              <label className='productDescriptionInput__label--style' htmlFor='product-description-input'>Description:</label>
+              <textarea id="product-description-input"></textarea>
+            </div>
           </div>
         </section>
 

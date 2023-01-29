@@ -10,12 +10,22 @@ main {
   flex: 1;
 }
 
+#product-visual {
+  padding:0 40px;
+}
+
 .productVisual__title--style{
   text-align: center;
 }
 
+.productVisual__description--style {
+  font-style: italic;
+}
+
 .productUI__heading--style {
   margin-bottom: 5px;
+  font-weight: bold;
+  font-style: italic;
 }
 
 #product-ui {
@@ -39,15 +49,26 @@ main {
 
 .productInformation__content--layout, .productDetails__content--layout {
   border: 1px solid black;
-  padding: 20px 10px;
+  padding: 20px 10px;  
 }
 
 label {
   font-weight: bold;
   margin-right: 10px;
-  vertical-align: bottom;
+  vertical-align: top;
+  min-width: 85px;
 }
 
 input {
   width: 80%;
+}
+
+.productInformation__input--container {
+  display: flex;
+  justify-content: space-between;
+}
+
+input, textarea {
+  margin-bottom: 20px;
+  width: 100%;
 }
