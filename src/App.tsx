@@ -20,6 +20,7 @@ function App() {
   const [productInstock, setProductInstock] = useState("Yes");
   const [productNumberOfUnits, setProductNumberOfUnits] = useState(4);
   const [productColorDescription, setProductColorDescription] = useState("Beige background with rainbow flowers accent with a light blue and bright red hair bows")
+  const [productMadeInUSA, setProductMadeInUSA] = useState("Yes");
 
   return (
     <main>
@@ -37,6 +38,7 @@ function App() {
         <div id="product-visual-details-area">
           <p>Number of Units: <span>#{productNumberOfUnits}</span></p>
           <p>Color: <span>{productColorDescription}</span></p>
+          <p>{productMadeInUSA==="Yes"?"Made in USA":"Imported Products"}</p>
         </div>
       </section>
       
@@ -60,12 +62,12 @@ function App() {
             <div className='productInstock__input--container'>
               <p>Instock:</p>
               <div>
-                <input onChange={() => setProductInstock("Yes")} id="product-instock-yes" value="Yes" name="product-instock-input" type="radio"></input>
+                <input checked={productInstock==="Yes"?true:false} onChange={() => setProductInstock("Yes")} id="product-instock-yes" value="Yes" name="product-instock-input" type="radio"></input>
                 <label htmlFor='product-instock-yes'>Yes</label>                
               </div>
               <div>
-                <input onChange={() => setProductInstock("No")} id="product-instock-no" value="No" name="product-instock-input" type="radio"></input>
-                <label htmlFor='product-instock-yes'>No</label> 
+                <input checked={productInstock==="No"?true:false} onChange={() => setProductInstock("No")} id="product-instock-no" value="No" name="product-instock-input" type="radio"></input>
+                <label htmlFor='product-instock-no'>No</label> 
               </div>
             </div>
           </div>
@@ -81,6 +83,17 @@ function App() {
             <div className='productDetails__input--container'>
                 <label htmlFor="product-color-description-input">Color</label>
                 <input className='contentInputs--style' id="product-color-description-input" type="text" onChange={(e)=> setProductColorDescription(e.target.value)}></input>
+            </div>
+            <div className='productMadeInUSA__input--container'>
+              <p>Made in USA:</p>
+              <div>
+                <input checked={productMadeInUSA==="Yes"?true:false} onChange={() => setProductMadeInUSA("Yes")} id="product-made-in-USA-yes" value="Yes" name="product-made-in-USA-input" type="radio"></input>
+                <label htmlFor='product-made-in-USA-yes'>Yes</label>                
+              </div>
+              <div>
+                <input checked={productMadeInUSA==="No"?true:false} onChange={() => setProductMadeInUSA("No")} id="product-made-in-USA-no" value="No" name="product-made-in-USA-input" type="radio"></input>
+                <label htmlFor='product-made-in-US-NO'>No</label> 
+              </div>
             </div>
           </div>
         </section>

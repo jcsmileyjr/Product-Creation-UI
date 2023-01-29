@@ -80,7 +80,7 @@ label {
   font-weight: bold;
   margin-right: 10px;
   vertical-align: top;
-  min-width: 85px;
+  min-width: 100px;
 }
 
 input {
@@ -92,24 +92,29 @@ input {
   justify-content: space-between;
 }
 
-.productInstock__input--container {
+.productInstock__input--container, .productMadeInUSA__input--container {
   display: flex;
   align-items: baseline;
 }
 
-.productInstock__input--container > div {
+.productInstock__input--container > div , .productMadeInUSA__input--container > div {
   display: flex;
 }
 
-.productInstock__input--container > p {
+.productInstock__input--container > p, .productMadeInUSA__input--container > p {
   font-weight: bold;
   margin-right: 5px;
-  min-width: 85px;
+  min-width: 100px;
   margin-top: 0;
 }
 
-.productInstock__input--container > div > input {
+.productInstock__input--container > div > label , .productMadeInUSA__input--container > div > label {
+  min-width: 50px;
+}
+
+.productInstock__input--container > div > input, .productMadeInUSA__input--container > div > input {
   margin-right: 5px;
+  margin-top: 2px;
 }
 
 input, textarea {
