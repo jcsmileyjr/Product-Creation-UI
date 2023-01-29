@@ -32,14 +32,20 @@ main {
   font-style: italic;
 }
 
-.productVisual__price--style {
+.productVisual__price-and-Stock--container > p {
   font-weight: bold;
   font-size: x-large;
+  margin-top: 5px;
 }
 
 .productVisualDollarSign {
   vertical-align: super;
   font-size: small;
+}
+
+.productVisual__price-and-Stock--container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .productUI__heading--style {
@@ -51,7 +57,7 @@ main {
 #product-ui {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  /* gap: 40px; */
 }
 
 #product-information, #product-details {
@@ -88,7 +94,31 @@ input {
   justify-content: space-between;
 }
 
+.productInstock__input--container {
+  display: flex;
+  align-items: baseline;
+}
+
+.productInstock__input--container > div {
+  display: flex;
+}
+
+.productInstock__input--container > p {
+  font-weight: bold;
+  margin-right: 5px;
+  min-width: 85px;
+  margin-top: 0;
+}
+
+.productInstock__input--container > div > input {
+  margin-right: 5px;
+}
+
 input, textarea {
+  cursor: pointer;
+}
+
+.contentInputs--style {
   margin-bottom: 20px;
   width: 100%;
 }
