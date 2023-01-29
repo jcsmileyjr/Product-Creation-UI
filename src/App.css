@@ -9,3 +9,27 @@ main {
   border: 1px solid black;
   flex: 1;
 }
+
+.productVisual__title--style{
+  text-align: center;
+}
+
+#product-ui {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 20px; 
+}
+
+#product-information {
+  flex: 3;
+}
+
+#product-details {
+  flex: 1;
+}
+
+.productInformation__content--layout, .productDetails__content--layout {
+  border: 1px solid black;
+}
+

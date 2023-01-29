@@ -1,4 +1,4 @@
-import React from 'react';
+import {useState} from 'react';
 import './App.css';
 
 /**
@@ -13,16 +13,30 @@ import './App.css';
  * 
  */
 function App() {
+  const [productTitle, setProductTitle] = useState("Product Title");
+
   return (
     <main>
       {/*Non input section to display the product based on input from Product UI section */}
       <section id="product-visual" className=''>
-          Product Visual
+        <h1 className='productVisual__title--style'>{productTitle}</h1>
       </section>
       
       {/*Product input section that is displayed in the Product Visual Section */}
       <section id="product-ui">
-          Product UI
+        <section id="product-information">
+          <p>General Product Information </p>
+          <div className='productInformation__content--layout'>
+
+          </div>
+        </section>
+
+        <section id="product-details">
+          <p>Product Details </p>
+          <div className='productDetails__content--layout'>
+
+          </div>
+        </section>
       </section>
     </main>
   );
