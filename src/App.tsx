@@ -24,8 +24,6 @@ function App() {
         <h1 className='productVisual__title--style'>{productTitle}</h1>
         <img className='productVisual__productImage--style' src={DefaultImage} alt="african woman with glasses surround by butterflis on a pillow" />
         <p className='productVisual__description--style'>{productDescription}</p>
-        <p className='productVisual__description--style'>{productDescription}</p>
-        <p className='productVisual__description--style'>{productDescription}</p>
       </section>
       
       {/*Product input section that is displayed in the Product Visual Section */}
@@ -39,7 +37,7 @@ function App() {
             </div>
             <div className='productInformation__input--container'>
               <label className='productDescriptionInput__label--style' htmlFor='product-description-input'>Description:</label>
-              <textarea id="product-description-input"></textarea>
+              <textarea onChange={(e) => setProductDescription(e.target.value)} id="product-description-input"></textarea>
             </div>
           </div>
         </section>
