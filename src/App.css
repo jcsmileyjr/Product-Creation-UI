@@ -134,3 +134,9 @@ input, textarea {
 #product-visual-details-area > p > span {
   font-weight: 400;
 } 
+
+@media only screen and (min-width:600px) {
+  .productVisual__productImage--style { 
+    width: 50%;
+  }
+}

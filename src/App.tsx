@@ -2,24 +2,13 @@ import {useState} from 'react';
 import DefaultImage from './assets/african-pillow-design.jpg'
 import './App.css';
 
-/**
- * First TYPESCRIPT project - Product Creation UI
- * 
- * TODO 1: DONE- A user can see the words "Hello World"
- * TODO 2: A user can write a new product title through an input field
- * TODO 3: A user can write a brief product description
- * TODO 4: A user can enter a dollar amount. Only whole dollar amounts.
- * TODO 5: A user can check Yes/No if the product is in stock. If no in stock, this should be reflected.
- * TODO 6: A user can verify their product details (number of units, color, made in USA based), shoud be an object.
- * 
- */
 function App() {
   const [productTitle, setProductTitle] = useState("Product Title");
   const [productDescription, setProductDescription] = useState("Product Description");
   const [productPrice, setProductPrice] = useState("5");
   const [productInstock, setProductInstock] = useState("Yes");
   const [productNumberOfUnits, setProductNumberOfUnits] = useState(4);
-  const [productColorDescription, setProductColorDescription] = useState("Beige background with rainbow flowers accent with a light blue and bright red hair bows")
+  const [productColorDescription, setProductColorDescription] = useState("Product Color")
   const [productMadeInUSA, setProductMadeInUSA] = useState("Yes");
 
   return (
@@ -102,4 +91,8 @@ function App() {
   );
 }
 
+/**
+ * Notes
+ * Sample Product color: Beige background with rainbow flowers accent with a light blue and bright red hair bows
+ */
 export default App;
