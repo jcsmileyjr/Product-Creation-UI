@@ -93,6 +93,8 @@ function App() {
 
 /**
  * Notes
+ * Sample Product Title: Afro-Futurism Satin Pillows
+ * Sample Product Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
  * Sample Product color: Beige background with rainbow flowers accent with a light blue and bright red hair bows
  */
 export default App;
