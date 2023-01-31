@@ -6,10 +6,10 @@ function App() {
   const [productTitle, setProductTitle] = useState("Product Title");
   const [productDescription, setProductDescription] = useState("Product Description");
   const [productPrice, setProductPrice] = useState("5");
-  const [productInstock, setProductInstock] = useState("Yes");
+  const [productInstock, setProductInstock] = useState("No");
   const [productNumberOfUnits, setProductNumberOfUnits] = useState(4);
   const [productColorDescription, setProductColorDescription] = useState("Product Color")
-  const [productMadeInUSA, setProductMadeInUSA] = useState("Yes");
+  const [productMadeInUSA, setProductMadeInUSA] = useState("No");
 
   return (
     <main>
